@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扇贝首页Demo</title>
+    <link rel="stylesheet" href="./shanbei.css">
+</head>
+<body>
+        <div class="nav__bar">
+            <div class="logo">
+                <img src="./images/logo_v4.png">
+            </div>
+            <ul class="nav__list">
+                <li class="nav__main">首页</li>
+                <li class="nav__main">单词</li>
+                <li class="nav__main">编程</li>
+                <li class="nav__main">听力</li>
+                <li class="nav__main">口语</li>
+                <li class="nav__main">短文</li>
+                <li class="nav__main">读书</li>
+                <li class="nav__main">炼句</li>
+                <li class="nav__main">课程</li>
+                <li class="nav__main">社区</li>
+            </ul>
+            <div class="input__btn" id="input__btn" onmouseout="initailStyle()">
+                <input type="text" id="input" placeholder="查词"  onmousedown="changeInputStyle()">
+                <div class="search__img" >
+                    <img src="./images/search_96px_1164646_easyicon.net.png" >
+                </div>
+            </div>
+            <div class="help__btn">
+                <p>帮助</p>
+            </div>
+            <div class="login__btn">
+                    <div class="dropdown">
+                            <ul class="dropdown__menu">
+                                <li>我的空间</li>
+                                <li>我的打卡</li>
+                                <li>我的班级</li>
+                                <li>我的课程</li>
+                                <li><div class="line"></div></li>
+                                <li>短信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li>贝壳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li><div class="line"></div></li>
+                                <li>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li>退出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            </ul>
+                        </div>
+                <div class="user__login__img">
+                    <img src="./images/user_img.png" >
+                </div>
+                <div class="user__name">
+                    <div class="name">
+                        <p>折子戏</p>
+                    </div>
+                    <div class="arraw">
+                        <img src="./images/icon-arraw.png" >
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="top__tasks">
+                <ul class="tasks__list">
+                    <li class="items">
+                        <div class="top__item">
+                            <div class="item__name">
+                                <p>单词</p>
+                            </div>
+                        </div>
+                        <div class="mid__item">
+                            <div class="item__num">
+                                <p>背<zero>0</zero>词</p>
+                            </div>
+                        </div>
+                        <div class="bottom__item">
+                            <div class="item__study">
+                                <p>去学习</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="top__item">
+                            <div class="item__name">
+                                <p>听力</p>
+                            </div>
+                        </div>
+                        <div class="mid__item">
+                            <div class="item__num">
+                                <p>听<zero>0</zero>句</p>
+                            </div>
+                        </div>
+                        <div class="bottom__item">
+                            <div class="item__study">
+                                <p>去学习</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="top__item">
+                            <div class="item__name">
+                                <p>短文</p>
+                            </div>
+                        </div>
+                        <div class="mid__item">
+                            <div class="item__num">
+                                <p>读<zero>0</zero>篇</p>
+                            </div>
+                        </div>
+                        <div class="bottom__item">
+                            <div class="item__study">
+                                <p>去学习</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="top__item">
+                            <div class="item__name">
+                                <p>炼句</p>
+                            </div>
+                        </div>
+                        <div class="mid__item">
+                            <div class="item__num">
+                                <p>写<zero>0</zero>句</p>
+                            </div>
+                        </div>
+                        <div class="bottom__item">
+                            <div class="item__study">
+                                <p>去学习</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mid__inf">
+                <div class="left__sentence">
+                    <div class="top__days">
+                        <div class="days">
+                            <p>我的第 <num_d>898</num_d> 天打卡</p>
+                        </div>
+                    </div>
+                    <div class="mid__sentence">
+                        <div class="left__user__img">
+                            <img src="./images/user_img.png">
+                        </div>
+                        <div class="right__sentence">
+                            <div class="horn">   
+                            </div>
+                            <div class="main__sentence">
+                                <div class="en__s">
+                                    <p>Desperadoes no way back.</p>
+                                </div>
+                                <div class="ch__s">
+                                    <p>吾欲远方独闯，更何惧天寒地冻路遥马亡。</p>
+                                </div>
+                                <div class="author">
+                                    <p> - Ricard M Lu, "Dragon Raja"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__share">
+                        <div class="sina__img">
+                            <img src="./images/sina_weibo_50px_1164436_easyicon.net.png" alt="">
+                        </div>
+                        <div class="share__inf">
+                            <a href="#">分享打卡到新浪微博每天奖励 10 贝壳</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__recommend">
+                    <div class="top__recommend__title">
+                        <p>今日推荐</p>
+                    </div>
+                    <div class="recommend__content">
+                        <div class="recommend__img">
+                            <img src="./images/2fbe161f6e6d441d515b80f47f0c9333f60a77cbd793e430c1d8a5a505543d91.png" alt="">
+                        </div>
+                        <div class="recommend__inf">
+                            <div class="inf__title">
+                                <p>
+                                    小组，想改变的人都在这里
+                                </p>
+                            </div>
+                            <div class="inf__content">
+                                <p>每天千万人互相鞭策<br>
+                                    陪你一起改变 共同成长<br>
+                                    还有负责的组长监督和鼓励<br>
+                                    英语学习的道路上你不是孤军奋战<br>
+                                    来结识适合你的那群人吧(ง •̀_•́)ง</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom__tags">
+                <div class="bottom__left">
+                    <span>
+                        <div class="top__img">
+                            <img src="./images/54d81c1526841ea07b9c689c0cb2965.png" >
+                        </div>
+                        <p>扇贝客户端</p>
+                    </span>
+                    <span>
+                        <div class="top__img"> 
+                        <img src="./images/icon_shop_v2.png" >
+                        </div>
+                        <p>扇贝商店</p>
+                    </span>
+                       
+                    <span>
+                        <div class="top__img"> 
+                        <img src="./images/1f70369113792acb9d5b8d52b7ad3455.jpeg" >
+                        </div>
+                        <p>小组推荐</p>
+                    </span>
+                </div>
+                <div class="bottom__right">
+                    <div class="toefl">
+                        <img src="./images/7436d5bb34d95f203bc4371f982bb672.jpg" alt="">
+                    </div>
+                    <div class="collins">
+                        <img src="./images/collins.png" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./shanbei.js"></script>
+</body>
+</html>
