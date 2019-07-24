@@ -1,7 +1,6 @@
 /** 
  * 最近最少使用原则
  * @param capacity:number 容量
- * 
 */
 
  var LRUCache = function(capacity) {
@@ -12,7 +11,6 @@
 
 LRUCache.prototype.get = function (key){
     // 调整优先级
-    
     return ;
 }
 
