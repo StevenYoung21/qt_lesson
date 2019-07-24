@@ -115,13 +115,67 @@
                     </div></div>
                 </div>
         </div>
-
+        <!-- section5 -->
+        <section class="movie-photo section-seperate">
+            <p class="action-list section-tittle">视频和剧照</p>
+            <ul class="movie-photo__lists"></ul>
+        </section>
+        <!-- section6 -->
+        <section class="section-seperate section-expender">
+            <p class="section-title pos_r">讨论
+                <span class="join-comment">参加讨论</span>
+            </p>
+            <ul class="movie-comment">
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>全部</span>
+                        <span class="commetn-item__num"></span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>好评</span>
+                        <span class="commetn-item__num">1561</span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>差评</span>
+                        <span class="commetn-item__num">123</span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>点映</span>
+                        <span class="commetn-item__num">456</span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>购票</span>
+                        <span class="commetn-item__num">1525</span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>认证作者</span>
+                        <span class="commetn-item__num">214</span>
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-item__sort">
+                        <span>同城</span>
+                        <span class="commetn-item__num">24</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </div>
     <script>
         // 自执行函数
         (function(){
             $.ajax({
-                url:'https://www.easy-mock.com/mock/5d2ed7c41418505a5562ae2a/movie/movie_lensson',
+                url:'https://www.easy-mock.com/mock/5d2ed7b21418505a5562ae18/movie/movie/maoyan',
                 type:'get',
                 success:function(res){
                     console.log(res);
@@ -144,7 +198,7 @@
                     celebrity(res.data.person);
                     //票房
                     booking(res.data.booking);
-                    
+                    photo(res.data.pictures);
                     
                 }
 
@@ -196,6 +250,22 @@
                 }
             }
         })()
+        //视频和剧照
+        function photo(e){
+            for(let n of e){
+                $('.movie-photo__lists').append(
+                    `
+                    <li class="stage-img-container">
+                        <a href="#" class="link">
+                            <div class="movie-celebrities_pic">
+                            <img src="${n}" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    `
+                )
+            }
+        }
         // var movie_watch = document.querySelector('#movie-watch');
         // var toast =document.querySelector('#toast');
         // movie_watch.addEventListener('click',function(){

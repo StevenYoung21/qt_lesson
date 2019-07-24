@@ -225,10 +225,73 @@ html,body
                     color #bababa
                     margin-top 0.1rem
 
-
-
-
-
+    .movie-photo
+        .movie-photo__lists
+            width 100%
+            box-sizing border-box
+            padding 0.3rem 0.3rem 0.2rem 0.3rem
+            white-space nowrap
+            overflow-x scroll   
+            .stage-img-container
+                margin-right 0.13333rem
+                display inline-block
+                width 2.4rem
+                height 1.867rem
+                .movie-celebrities_pic
+                    width 100%
+                    height 100%
+                    img
+                        width 100%
+                        height 100%
+                &:first-child
+                    width 3.3334rem
+                    height 1.867rem
+                &:last-child
+                    margin-right 0    
+                
+    .pos_r
+        position relative
+        .join-comment
+         position absolute
+         font-size 14px
+         background-color #e54847
+         color white
+         right 0
+         top 50%
+         transform translateY(-50%)  
+         padding 0.1rem 0.3rem
+         border-radius 20px 
+    .movie-comment
+        padding 0.2rem 0 0.4rem 0     
+        overflow hidden
+        .comment-item
+            // background-color red
+            float left 
+            padding 0.1rem 0.25rem
+            border 1px solid #aaa
+            border-radius 20px
+            margin-top 0.2rem
+            margin-right 0.3rem
+    // font-size 16px
+    //     font-weight 700
+    //     .join-comment
+    //         float right 
+    //         font-weight 100
+    //         border 1px solid #d96a3d
+    //         border-radius 50px
+    //         background-color #d96a3d
+    //         color white
+    //         padding 1px 10px 1px 10px
+    // .movie-comment
+    //     margin-top 10px 
+    //     .comment-item
+    //         float left
+    //         border 1px solid #e0e0e0
+    //         border-radius 50px
+    //         padding 1px 10px 1px 10px
+    //         .comment-item__sort
+    //             margin-top 5px 
+              
 
 #toast
     display none
