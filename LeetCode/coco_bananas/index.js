@@ -4,7 +4,6 @@ var minEatingSpeed = function (piles, H = 8){
 
         while(lo <= hi){
             //提前退出
-
             if(canEatAllBananas(piles, H, lo)){
                 return lo;
             }

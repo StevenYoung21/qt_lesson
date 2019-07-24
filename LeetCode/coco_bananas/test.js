@@ -3,7 +3,7 @@ const IMath = {}  //namespace
 /**
  * @params:number NaN
  * @return:Number 返回最大值
- *  
+ *
  */
 IMath.max = function(...args){
     // console.log(arguments, arguments.length);
