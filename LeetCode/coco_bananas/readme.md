@@ -16,7 +16,7 @@ Return the minimum integer K such that she can eat all the bananas within H hour
 - K  K*H
 - k min  
     1吃不完
-    20 H就吃完了
+    20 H 就吃完了
 
 1. 把香蕉表达一下
     .lenght H
